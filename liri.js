@@ -15,6 +15,7 @@ function searchSpotify(searchSpotify) {
     // Spotify
     var Spotify = require('node-spotify-api');
     var spotify = new Spotify(keys.spotify);
+    var spotifytwo = new Spotify(randomn.spotifytwo)
 
     spotify.search({
         type: 'track',
@@ -49,8 +50,6 @@ if (inputArgument == "spotify") {
     // Imdb
     const imdb = require('imdb-api')
    
-
-
     if  (true){
         imdb.search({
             title: 'Batman'
@@ -88,6 +87,15 @@ fs.readFile("keys.js", "utf8", function (error, data) {
     if (error) {
         return console.log(error);
     }
+
+    fs.readFile("random.txt", "utf8", function (error, data) {
+
+        // If the code experiences any errors it will log the error to the console.
+        if (error) {
+            return console.log(error);
+        }
+
+
 
     //   var html = '<div class="tweet">TWEET_IMGTWEET_TEXT';
 
