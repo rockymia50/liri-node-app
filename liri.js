@@ -45,6 +45,7 @@ if (inputArgument == "spotify") {
         if (!error) {
             console.log(tweets);
         }
+        var item = data.tracks.items[0]
     });
 } else if (inputArgument == "imdb-api") {
     // Imdb
@@ -109,5 +110,5 @@ fs.readFile("keys.js", "utf8", function (error, data) {
     //       );
 
     //   }					
-
+    });
 });
