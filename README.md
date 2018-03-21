@@ -1,6 +1,6 @@
 # liri-node-app
 
-The liri-node-app was built to search 3 api's Twitter, Spotify, and Imdb to give you back relevant information based on your search.
+The liri-node-app was built to query 3 api's Twitter, Spotify, and Imdb to give you back relevant information based on your search.
 
 TO USE this app you must have NODE and a few npm packages to run it. Those dependencies are:
 
@@ -14,9 +14,14 @@ dependencies": {
     
 
 
+*Commands
+
 TO SWITCH between the different applications you want to search simply use the command.
 
 node liri.js <name of the service you want to use> ie twitter, spotify, or imdb-api
+    
+
+* You will need to create your own Twitter and/or Spotify keys to run the full functionality of the app. 
 
 
 
